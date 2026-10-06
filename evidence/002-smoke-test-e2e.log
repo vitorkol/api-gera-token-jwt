@@ -1,0 +1,21 @@
+=== Smoke test E2E — API JWT (Laravel + Docker) ===
+PASS  login admin gera token (336 chars)
+PASS  login user gera token (335 chars)
+PASS  login senha errada => 401 (HTTP 401)
+PASS  role sem token => 401 (HTTP 401)
+PASS  role admin => 200 (HTTP 200)
+PASS  role user => 200 (HTTP 200)
+PASS  payload role user = {"role":"user"}
+PASS  me com token => 200 (HTTP 200)
+PASS  me sem token => 401 (HTTP 401)
+PASS  admin/ping admin => 200 (HTTP 200)
+PASS  admin/ping user => 403 (HTTP 403)
+PASS  admin/ping sem token => 401 (HTTP 401)
+PASS  token adulterado => 401 (HTTP 401)
+PASS  refresh gera token novo
+PASS  me com token renovado => 200 (HTTP 200)
+PASS  logout admin => 200 (HTTP 200)
+PASS  me com token logoutado => 401 (HTTP 401)
+PASS  register => 201 (HTTP 201)
+PASS  novo usuario tem role user
+=== Resultado: 19 PASS / 0 FAIL ===

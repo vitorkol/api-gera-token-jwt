@@ -1,0 +1,13 @@
+
+> jwt-auth-frontend@1.0.0 build
+> vite build
+
+vite v5.4.21 building for production...
+transforming...
+✓ 41 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                   0.41 kB │ gzip:  0.29 kB
+dist/assets/index-G2ulCZ--.css    2.95 kB │ gzip:  1.07 kB
+dist/assets/index-zZlTEJEr.js   172.73 kB │ gzip: 55.89 kB
+✓ built in 6.82s

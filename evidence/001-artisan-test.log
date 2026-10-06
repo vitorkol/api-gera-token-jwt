@@ -1,0 +1,33 @@
+
+   PASS  Tests\Unit\ExampleTest
+  ✓ that true is true                                                    0.13s  
+
+   PASS  Tests\Feature\AuthApiTest
+  ✓ login com credenciais validas retorna token                          7.77s  
+  ✓ login com senha incorreta retorna 401                                0.15s  
+  ✓ login com email inexistente retorna 401                              0.14s  
+  ✓ login com payload invalido retorna 422                               0.27s  
+  ✓ register cria usuario com role user e retorna token                  0.26s  
+  ✓ register com email duplicado retorna 422                             0.16s  
+  ✓ register com senha curta retorna 422                                 0.16s  
+  ✓ me retorna usuario autenticado                                       0.14s  
+  ✓ me sem token retorna 401                                             0.14s  
+  ✓ token malformado retorna 401                                         0.15s  
+  ✓ refresh retorna novo token valido                                    0.20s  
+  ✓ logout invalida o token blacklist                                    0.18s  
+
+   PASS  Tests\Feature\ExampleTest
+  ✓ the application returns a successful response                        0.58s  
+
+   PASS  Tests\Feature\RoleAccessTest
+  ✓ role endpoint valida token e retorna role                            0.15s  
+  ✓ role endpoint sem token retorna 401                                  0.14s  
+  ✓ admin ping permitido para role admin                                 0.15s  
+  ✓ admin ping negado para role user 403                                 0.14s  
+  ✓ admin ping negado para role manager 403                              0.14s  
+  ✓ admin ping sem token retorna 401                                     0.14s  
+  ✓ payload do jwt contem claim role                                     0.14s  
+
+  Tests:    21 passed (50 assertions)
+  Duration: 13.01s
+
